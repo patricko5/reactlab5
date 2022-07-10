@@ -35,7 +35,7 @@ class PostList extends Component {
     const { posts } = this.state;
     return (
       <div>
-        <h1> Example of React Axios Delete Request </h1>
+        <h1> Axios Delete Request </h1>
         <table className="table border-table">
           <thead>
             <tr className="header-table">
@@ -48,7 +48,7 @@ class PostList extends Component {
 
           <tbody>
             {posts.map((post) => (
-              <tr>
+              <tr key={post.id}>
                 <td>{post.id}</td>
                 <td>{post.title}</td>
                 <td>
@@ -57,7 +57,6 @@ class PostList extends Component {
                 </td>
                 <td>
                   <button
-                    className="btn btn-danger"
                     onClick={(e) => this.deleteRow(post.id, e)}
                   >
                     Delete

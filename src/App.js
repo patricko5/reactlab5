@@ -1,11 +1,11 @@
-
-import './App.css';
-import PostList from './components/PostList';
-
+import "./App.css";
+import PostList from "./components/PostList/PostList";
+import AddList from "./components/AddList/AddList";
 function App() {
   return (
     <div className="App">
-      <PostList/>
+      <PostList />
+      {/* <AddList /> */}
     </div>
   );
 }
