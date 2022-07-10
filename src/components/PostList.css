@@ -1,3 +1,25 @@
-.thumbnailSize {
-    
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 1440px;
+}
+
+.title-column {
+    width: 70%;
+}
+.delete-column {
+    width: 7.5%
+}
+.id-column {
+    width: 7.5%;
+}
+.thumbnail-column {
+    width: 15%;
+}
+
+.header-table {
+    background-color: rgb(27, 150, 245);
+    color: white;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import './PostList.css';
 class PostList extends Component {
   constructor(props) {
     super(props);
@@ -36,13 +36,13 @@ class PostList extends Component {
     return (
       <div>
         <h1> Example of React Axios Delete Request </h1>
-        <table className="table table-bordered">
+        <table className="table border-table">
           <thead>
-            <tr>
-              <th>ID</th>
-              <th>Title</th>
-              <th>Thumbnail</th>
-              <th>Delete</th>
+            <tr className="header-table">
+              <th className="id-column">ID</th>
+              <th className="title-column">Title</th>
+              <th className="thumbnail-column">Thumbnail</th>
+              <th className="delete-column">Delete</th>
             </tr>
           </thead>
 
@@ -53,7 +53,7 @@ class PostList extends Component {
                 <td>{post.title}</td>
                 <td>
                   {" "}
-                  <img className="thumbnailSize" src={post.thumbnailUrl}></img>{" "}
+                  <img className="thumbnail-image" src={post.thumbnailUrl}></img>{" "}
                 </td>
                 <td>
                   <button
